@@ -5,7 +5,7 @@ locQ = list(input("Gimme a city in english: ").lower())
 locQ[0] = locQ[0].upper()
 locQ = "".join(locQ)
 print(locQ)
-APIKEY = "a2b48414c4f0f2600020156cedc5921f"
+APIKEY = ""
 loc = requests.get(
     f"http://api.openweathermap.org/geo/1.0/direct?q={
         locQ}&appid={APIKEY}&limit=1"
